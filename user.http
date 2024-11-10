@@ -1,0 +1,27 @@
+### Create user
+POST http://localhost:3000/user
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "john@example.com"
+}
+
+### Comment
+POST http://localhost:3000/comment
+Accept: application/json
+Content-Type: application/json
+
+{
+  "content": "This is a comment",
+  "userId": "67311d58d06f0a001ae0b97a"
+}
+
+### Get comments
+GET http://localhost:3000/user/67311d58d06f0a001ae0b97a/comments
+
+### Get user
+GET http://localhost:3000/user/67311d58d06f0a001ae0b97a
+
+
